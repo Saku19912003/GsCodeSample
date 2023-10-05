@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<script src="js/jquery-2.1.3.min.js"></script>
+<link rel="stylesheet" href="css/sample.css">
+<title>おみくじ</title>
+</head>
+<body>
+
+<header>
+    <h1 style="color: rgb(213, 14, 14);">⛩⛩⛩⛩⛩おみくじ⛩⛩⛩⛩⛩</h1>
+</header>
+
+<style>
+#echo{
+    color:#efce12;
+}
+</style>
+
+
+<main>
+    <ul>
+        <li id="pull">～おみくじを引く～</li>
+    </ul>
+    <p id="echo"></p>
+</main>
+
+<footer>✨良き一日になりますように😻</footer>
+<script>
+
+
+//Clickイベントのブロック
+const pull=document.querySelector("#pull");
+const echoElement=document.querySelector("#echo");
+
+pull.onclick=function(){
+    //乱数を作る
+    const num=Math.ceil(Math.random()*5);
+
+    let resultText="";
+
+    //乱数をIF分岐処理で分ける
+    if(num==1){
+        resultText="大吉!!!!!";
+    }else if(num==2){
+        resultText="中吉!!!!";
+    }else if(num==3){
+        resultText="小吉!!!";
+    }else if(num==4){
+        resultText="吉!!";
+    }else if(num==5){
+        resultText="凶!";
+    }
+
+    echoElement.innerHTML = `今日の運勢は・・・<strong>${resultText}</strong>`;
+
+}
+
+</script>
+</body>
+</html>
