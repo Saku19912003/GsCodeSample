@@ -1,0 +1,78 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .memo-form {
+    flex: 1;
+    background-color: #3ad4bb;
+    padding: 10px;
+    border: 1px solid #23e85b;
+    border-radius: 5px;
+  }
+  
+  .memo-form input[type="text"],
+  .memo-form textarea {
+    width: 100%;
+    margin: 5px 0;
+    padding: 5px;
+  }
+  
+  .memo-list {
+    flex: 1;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  li button {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 3px 5px;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  
+  footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+  }
+  
